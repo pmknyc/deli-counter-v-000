@@ -6,9 +6,9 @@ empty_deli = []
 
 def line(array)
   if !array.empty?
-    print "The line is currently: "
+  
     array.map.with_index {|name, index|
-      print "#{index + 1}. #{name} "
+      puts "The line is currently: #{index + 1}. #{name} "
   }
   else
     puts "The line is currently empty."
