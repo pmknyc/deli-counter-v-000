@@ -4,15 +4,13 @@ katz_deli = ["Ann", "Betty","Cathy","Dina","Ella","Fran","Gabby",
   "Helen"]
 empty_deli = []
 
-def line(array)
-  if !array.empty?
-  
-    array.map.with_index {|name, index|
-      puts "The line is currently: #{index + 1}. #{name} "
-  }
-  else
+def line(line)
+  if line.empty?
     puts "The line is currently empty."
-  end
+  else
+    array.map.with_index do |name, index|
+      line_order = "#{index + 1}. #{name}"
+  end.join(" ")
 end
 
 
