@@ -1,20 +1,18 @@
 require 'pry'
-# Line:  customers in order of their place in line
-katz_deli = ["Ann", "Betty","Cathy","Dina","Ella","Fran","Gabby",
-  "Helen"]
-empty_deli = []
+carnegie_deli = ["Ann", "Betty","Cathy","Dina","Ella","Fran","Gabby", "Helen"]
+katz_deli = []
 
-def line(line)
-  if line.empty?
+# Line:  customers in order of their place in line
+def line(deli)
+  if deli.empty?
     puts "The line is currently empty."
   else
-    line.map.with_index do |name, index|
-      line_order = "#{index + 1}. #{name}"
-binding.pry
+    line_order = deli.map.with_index do |name, index|
+      "#{index + 1}. #{name}"
       end.join(" ")
+    puts "The line is currently: #{line_order}"
   end
 end
-
 
 # assigns line number (index) at end of customer array
 # puts message telling new customer their place in line
