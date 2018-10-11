@@ -26,7 +26,7 @@ def take_a_number(array, name)
 end
 
  # now_serving finds first person in line
- # puts notice "Currently serving #{first_person)." 
+ # puts notice "Currently serving #{first_person)."
  # and removes first person from front of array.
  # If nobody in line, puts out "There is nobody waiting to be served!"
 def now_serving (deli)
