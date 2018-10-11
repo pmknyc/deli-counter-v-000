@@ -10,7 +10,7 @@ def line(deli)
   else
     line_order = deli.map.with_index(1) do |name, index|
       "#{index}. #{name}"
-      end.join(" "
+      end.join(" ")
     puts "The line is currently: #{line_order}"
   end
 end
