@@ -8,7 +8,7 @@ def line(line)
   if line.empty?
     puts "The line is currently empty."
   else
-    array.map.with_index do |name, index|
+    line.map.with_index do |name, index|
       line_order = "#{index + 1}. #{name}"
   end.join(" ")
 binding.pry
