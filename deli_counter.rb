@@ -10,9 +10,9 @@ def line(line)
   else
     array.map.with_index do |name, index|
       line_order = "#{index + 1}. #{name}"
-    end
-binding.pry
   end.join(" ")
+binding.pry
+  end
 binding.pry
 end
 
