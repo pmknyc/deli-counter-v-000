@@ -10,7 +10,10 @@ def line(line)
   else
     array.map.with_index do |name, index|
       line_order = "#{index + 1}. #{name}"
+    end
+binding.pry
   end.join(" ")
+binding.pry
 end
 
 
@@ -23,6 +26,6 @@ end
 
  # now_serving puts  next person in line and remove them from front of array.
  # If nobody in line, puts out "There is nobody waiting to be served!"
- def now_serving (name)
+def now_serving (name)
 
 end
