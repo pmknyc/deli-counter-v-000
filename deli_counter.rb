@@ -16,8 +16,8 @@ end
 
 # take_a_number: call with deli array and new customer name
 # push new name to end of array
-# get index of new name; use new name & index (or array length) in
-# puts "Welcome, #{name}, you are number #{index} in line."
+# get index of new name; use new name &  array length in:
+# puts "Welcome, #{name}, you are number #{array.length} in line."
 def take_a_number(array, name)
   array.push(name)
   puts "Welcome, #{name}. You are number #{array.length} in line."
