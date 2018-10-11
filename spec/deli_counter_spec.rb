@@ -1,3 +1,4 @@
+require "pry"
 describe 'Deli Counter' do
 
   let(:katz_deli) { [] }
@@ -69,6 +70,8 @@ describe 'Deli Counter' do
         expect($stdout).to receive(:puts).with("Currently serving Logan.")
         now_serving(other_deli)
         expect(other_deli).to eq(%w(Avi Spencer))
+    other_deli
+    binding.pry
       end
     end
   end
